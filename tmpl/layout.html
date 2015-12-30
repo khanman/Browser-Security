@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	<meta http-equiv="Content-Security-Policy" content="frame-src 'self' http://modulator.ccs.neu.edu"/>
+	<meta http-equiv="Content-Security-Policy" content="img-src 'self'"/>
+	<meta http-equiv="Content-Security-Policy" content="font-src 'self' http://fonts.googleapis.com http://fonts.gstatic.com"/>
+	<meta http-equiv="Content-Security-Policy" content="object-src 'self'"/>
+        <meta http-equiv="Content-Security-Policy" content="style-src 'self'/>
+	<title>{% block title %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,300,600" type="text/css">
+        <link rel="stylesheet" href="/assets/css/normalize.css">
+        <link rel="stylesheet" href="/assets/css/skeleton.css">
+        <link rel="stylesheet" href="/assets/css/app.css">
+        <link rel="icon" href="/assets/img/favicon.png" type="image/png">
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+</html>
